@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/CDM Logo.png">
+    <title>CDM - STUDENT REGISTRATION</title>
+    <link rel="stylesheet" href="fill up.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="./images/CDM Logo.png" width="80px"></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#mission" class="nav-link">Home Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="registration-container">
+        <h1>Student Enrollment Form</h1>
+        <form onsubmit="submitLang(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="middleInitial">Middle Initial</label>
+                    <input type="text" id="middleInitial" name="middleInitial" maxlength="1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lastSchool">Last Year School Attended</label>
+                    <input type="text" id="lastSchool" name="lastSchool" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Choose a Course</option>
+                        <option value="beed-gen">Bachelor of Elementary Education Major in General Education</option>
+                        <option value="beced">Bachelor of Early Childhood Education</option>
+                        <option value="bsed-sci">Bachelor of Secondary Education Major in Science</option>
+                        <option value="btled-ict">Bachelor of Technology and Livelihood Education Major in ICT</option>
+                        <option value="bsit">Bachelor of Science in Information Technology</option>
+                        <option value="bsed">Bachelor of Science in Computer Engineering</option>
+                        <option value="bsba">Bachelor of Science in Entrepreneurship</option>
+                        <option value="bsba">Bachelor of Science in Business Administration</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
