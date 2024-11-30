@@ -321,9 +321,11 @@ button, input, select {
     .main-title {
         font-size: 3rem; /* Adjust font size for mobile devices */
     }
+    
     .main-subtitle {
         font-size: 1rem;
     }
+
     .main img {
         width: 80%; /* Reduce image size on smaller devices */
         margin: 1rem auto;
