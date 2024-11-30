@@ -163,7 +163,6 @@ button, input, select {
     font-weight: 800;
     letter-spacing: -2px;
     color: gold;
-    margin-top: 10rem;
     text-align: center;
 }
 
@@ -320,7 +319,6 @@ button, input, select {
 
 @media screen and (max-width: 768px) {
     .main-title {
-        margin-top: 7rem;
         font-size: 3rem; /* Adjust font size for mobile devices */
     }
     .main-subtitle {
