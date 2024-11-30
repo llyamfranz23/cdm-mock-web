@@ -372,9 +372,3 @@ button, input, select {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
-
-@media screen and (max-width: 480px) {
-    .nav-link {
-        font-size: 14px;
-    }
-}
